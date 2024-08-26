@@ -106,8 +106,8 @@ section.features-section{
     align-items: center;
     justify-content: space-around;
 }
-h3.simpel-text{
-    font-family: 'Pacifico',cursive;
+div.cursive{
+    font-family:  "Cedarville Cursive", cursive;
     color: rgb(221, 172, 57);
 }
 h1.simple-text2{
@@ -152,5 +152,42 @@ article.highlight-card:hover {
     background-color: #FEA116;
     color: #fff !important;
 }
+/*responsive website start here*/
+@media (min-width: 320px) and (max-width:576px){
+    img.logo {
+        height: 10vh;
+        width: 17vw;
+    }
+    nav.nav-bar-section ul{
+        padding: 0;
+    }
+    nav.nav-bar-section ul li.nav-link{
+        display: block;
+        
+    }
+    nav.nav-bar-section ul li.nav-link:hover{
+        border:0;
+        padding-bottom:0;
+    }
+    section.hero-unit-section {
+        flex-direction: column-reverse;
+    }
+    section.hero-unit-highlight-section {
+        width: 81vw;
+    }
+    a.book-table{
+        width: 26vw;
+        
+    }
+    section.hero-unit-image-section {
+        width: 72vw;
+    }
+    section.highlights-section{
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+    article.highlight-card{
+        width: 88vw;
+    }
 
-
+}
